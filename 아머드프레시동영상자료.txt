@@ -1,0 +1,17 @@
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_1_intro.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_2_loop.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_3.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_4_loop.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_5.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_6_loop.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_R_3.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_4_loop.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_R_2.mp4
+https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_2_loop.mp4
+처음 로딩은1번동영상재생후자연스럽게 2번 동영상으로 재생후 
+마우스 휠을 내리면 3번재생후 자연스럽게 4번 마우스휠을 내리면 5번 재생후 자연스럽게 6번재생
+마우스휠을 올리면 R_3재생후 4_loop재생 마우스휠을 또한번 올리면 R_2재생후 2_loop재생하게 하려면
+이어지는 동영상재생시 자연스럽게 깜빡임 없이 재생하게 하려면
+
+2번째 질문
+이어지는 동영상이 깜빡입니다
