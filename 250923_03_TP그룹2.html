@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TC소개</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      div.txt {
+        /* width: 800px; */
+        margin: 50px auto;
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: center;
+        gap: 80px;
+      }
+      div.txt label {
+        display: inline-block;
+        line-height: 40px;
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+        color: #999;
+      }
+      div.txt label::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        background-color: #ddd;
+        right: -40px;
+        top: 30%;
+      }
+      div.txt label:last-child::after {
+        /* width: 0%; */
+        content: "";
+      }
+      div.visual {
+        width: 100%;
+        height: 480px;
+        position: relative;
+      }
+      div.visual p {
+        position: absolute;
+      }
+      div.visual p img {
+        opacity: 0;
+        transition: 0.5s;
+      }
+      div.visual p:first-child img {
+        opacity: 1;
+      }
+      #company1:checked ~ div.txt label:nth-child(1),
+      #company2:checked ~ div.txt label:nth-child(2),
+      #company3:checked ~ div.txt label:nth-child(3),
+      #company4:checked ~ div.txt label:nth-child(4),
+      #company5:checked ~ div.txt label:nth-child(5),
+      #company6:checked ~ div.txt label:nth-child(6) {
+        font-weight: bold;
+        color: #000;
+        border-bottom: 3px solid #5cb3e6;
+      }
+
+      #company1:checked ~ div.visual p:first-child img,
+      #company2:checked ~ div.visual p:nth-child(2) img,
+      #company3:checked ~ div.visual p:nth-child(3) img,
+      #company4:checked ~ div.visual p:nth-child(4) img,
+      #company5:checked ~ div.visual p:nth-child(5) img,
+      #company6:checked ~ div.visual p:nth-child(6) img {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="company" id="company1" checked />
+    <input type="radio" name="company" id="company2" />
+    <input type="radio" name="company" id="company3" />
+    <input type="radio" name="company" id="company4" />
+    <input type="radio" name="company" id="company5" />
+    <input type="radio" name="company" id="company6" />
+
+    <div class="txt">
+      <label for="company1">CEO 인사말</label>
+      <label for="company2">연혁</label>
+      <label for="company3">미션·비전</label>
+      <label for="company4">CI</label>
+      <label for="company5">계열사</label>
+      <label for="company6">글로벌 사업장</label>
+    </div>
+
+    <div class="visual">
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual01_1.jpg"
+          alt="visual01"
+        />
+      </p>
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual02.jpg"
+          alt="visual02"
+        />
+      </p>
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual_vision.jpg"
+          alt="visual03"
+        />
+      </p>
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual04_2.jpg"
+          alt="visual04"
+        />
+      </p>
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual_nadia.jpg"
+          alt="visual05"
+        />
+      </p>
+      <p>
+        <img
+          src="https://tp-inc.com/images/sub/sub_visual_global.jpg"
+          alt="visual06"
+        />
+      </p>
+    </div>
+  </body>
+</html>
